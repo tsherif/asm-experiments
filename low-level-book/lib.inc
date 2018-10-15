@@ -4,6 +4,10 @@ digits: db "0123456789"
 
 section .text
 
+exit:
+    mov rax, 60
+    syscall
+
 string_length:
     xor rax, rax
 .loop:
